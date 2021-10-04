@@ -51,3 +51,14 @@ console.log("Before: "  + JSON.stringify(testArray));
 console.log(nextInLine(testArray, "teardrop"));
 console.log("After: ", JSON.stringify(testArray));
 
+// If statements: this is meant to demonstrate booleans, true or false, but all this function does to determine if it was true or false is see if there was a a parameter passed through for the value "wasItTrue". If ANYTHING exists in that as an argument, it will return "It was true", and if not, "It was false". In this application, true/the if statement essentially means yes, something exists as a parameter, and if it's null/blank, it's false. Try putting in different arguments into the test function to illustrate.
+
+function test (wasItTrue) {
+    if (wasItTrue) {
+        return "It was true";
+    }
+    return "It was false";
+};
+
+console.log(test(true));
+console.log(test(false));
