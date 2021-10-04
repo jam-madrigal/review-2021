@@ -13,6 +13,9 @@ function hoopDoopLocalScope() {
 var myHat = "Witch hat: Pointy and magical.";
 
 function showHat() {
+    // uncomment this  next line to see the local variable take precedent over the global variable
+        myHat = "not a witch hat??";
+
     console.log(myHat);
 
 /*     or
@@ -21,9 +24,11 @@ function showHat() {
 }
 
 showHat();
+// this next console log demonstrates the local variable taking precedent over the global variable, and changing the value
+console.log(myHat);
 
 /* or
-console.log(showHat());
+console.log(showHat()); with the return uncommented
  */
 
 // As demonstrated, the function still logs, in the console, the global variable, which in this case is a string.
